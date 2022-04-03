@@ -1,0 +1,913 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+/* Top Header Styling */
+.topHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin-top: 20px;
+}
+.verticleThe {
+  padding: 5px;
+  transform: rotate(-90deg);
+  font-size: 25px;
+  font-weight: 500;
+}
+.siren {
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* navigation menu styling */
+a.active {
+  color: rgb(38, 0, 255);
+}
+.menuBar {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  padding-top: 20px;
+  border-bottom: 2px solid rgb(230, 227, 227);
+}
+.menuIcon {
+  display: none;
+}
+.menuBar .menuItem {
+  list-style: none;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.textMenu {
+  text-decoration: none;
+  color: rgb(73, 68, 68);
+}
+/* home styling */
+.home {
+  display: grid;
+  column-gap: 8px;
+  row-gap: 8px;
+  width: 100%;
+  height: 65vh;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 50px;
+}
+.grid {
+  border-radius: 5px;
+}
+.grid1 {
+  background-image: url("../public/images/natural1.jpg");
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.grid1 .homeTitle {
+  position: absolute;
+  bottom: 80px;
+  left: 70px;
+  color: white;
+}
+.grid1 .homeTitle .titleHead {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.grid1 .homeTitle .titlePara {
+  opacity: 0.7;
+  padding: 10px 0;
+}
+.grid2 {
+  background-image: url("../public/images/natural2.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.grid3 {
+  background-image: url("../public/images/natural3.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.homeTitleRight {
+  color: #ffff;
+  position: absolute;
+  bottom: 70px;
+  left: 15px;
+}
+.homeTitleRight .titleHeadRight {
+  font-size: 25px;
+}
+.titleParaRight {
+  opacity: 0.6;
+}
+/* latest part styling */
+.latestHome {
+  width: 80%;
+  border: 1px solid gray;
+}
+.latest {
+  margin-top: 50px;
+}
+.latestHeading {
+  font-size: 25px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+.latestHeading span {
+  border-bottom: 3px solid crimson;
+  padding-right: 5px;
+}
+.latestGrid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+.latestGridCard {
+  border-radius: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px -2px rgb(189, 186, 186);
+  background-color: rgb(248, 244, 244);
+}
+.cardImage {
+  height: 30vh;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.latestGridCard .cardTitle {
+  width: 90%;
+  margin: auto;
+}
+.latestGridCard .cardHeadTitle {
+  opacity: 0.7;
+  font-size: 11px;
+  margin: 10px 0;
+}
+.latestGridCard .cardPara {
+  font-size: 15px;
+  color: gray;
+  margin: 10px 0;
+}
+.latestGridCard .paraBottom {
+  margin-top: 50px;
+}
+.latestGridCard .paraBottom span {
+  color: gray;
+  padding-left: 10px;
+}
+/* latest Articles */
+.latestArticles {
+  margin-top: 20px;
+}
+.latestArticles .headLatestArticles {
+  margin: 20px 0;
+}
+.latestArticles .headLatestArticles span {
+  border-bottom: 3px solid crimson;
+}
+.latArticlesGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 10px;
+}
+.latArticlesGrid .latArticlesGridRight1 {
+  height: 70vh;
+  border: 2px solid rgb(214, 211, 211);
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+}
+/* latest article */
+.articleCard {
+  display: flex;
+  width: 95%;
+  border-top: 2px solid rgb(211, 209, 209);
+  padding: 10px 15px;
+  position: relative;
+}
+.cardImaeField {
+  width: 280px;
+  height: 150px;
+  border-radius: 5px;
+}
+.articleCardRight {
+  margin-left: 10px;
+  /* width: 40%; */
+  padding-left: 10px;
+}
+.articleCardRight .articleRightHeading {
+  opacity: 0.9;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.articleCardRight .articlePara {
+  font-size: 13px;
+  width: 90%;
+  padding: 5px;
+  color: gray;
+}
+.articleCardRight .arcticleBottomPara {
+  margin-top: 10px;
+}
+.articleCardRight .arcticleBottomPara span {
+  color: gray;
+  padding-left: 10px;
+}
+.latArticlesGridRight2 {
+  margin-top: 20px;
+}
+.latArticlesGridRight2 span {
+  border-bottom: 2px solid crimson;
+  padding-right: 5px;
+  padding: 5px;
+}
+.skyImage {
+  margin-top: 25px;
+  width: 100%;
+  border-radius: 5px;
+}
+.articleTitle {
+  width: 60%;
+  font-size: 20px;
+  opacity: 0.9;
+}
+.titleRight {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.RightOne {
+  font-size: 40px;
+  opacity: 0.1;
+}
+.articleParaBottom {
+  margin-top: 20px;
+}
+.articleParaBottom span {
+  border: none;
+  opacity: 0.5;
+}
+.rightArticleTpost {
+  margin-top: 10px;
+}
+.rightBottomCard {
+  padding: 5px 3px;
+  display: flex;
+  border-top: 2px solid rgb(185, 182, 182);
+}
+.smallConatiner {
+  display: flex;
+  justify-content: space-between;
+}
+.smallImage {
+  width: 40%;
+  border-radius: 5px;
+}
+.smallRight {
+  padding: 0 10px;
+}
+.smallHeader {
+  font-size: 18px;
+  color: rgb(117, 112, 112);
+}
+.bottomPara {
+  margin-top: 15px;
+  font-size: 13px;
+}
+.bottomPara span {
+  opacity: 0.6;
+  border-bottom: none;
+}
+.twoNumber {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  opacity: 0.1;
+}
+/* loadMore style */
+.loadMore1 {
+  margin: 20px 10px;
+  display: flex;
+}
+.downArow {
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+.loadHead {
+  margin-left: 10px;
+  text-transform: uppercase;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.vertiCalimg {
+  background-image: url("../public/images/bg1.jpg");
+  width: 100%;
+  height: 55vh;
+  background-position: center;
+  background-size: contain;
+  border-radius: 5px;
+  margin-top: 67px;
+  display: grid;
+  place-items: center;
+  color: #ffff;
+  position: relative;
+}
+.titleHeadver {
+  font-size: 35px;
+}
+.titleParaver {
+  position: absolute;
+  bottom: 23%;
+  left: 40%;
+  opacity: 0.7;
+}
+/* latest stories */
+.latestStories {
+  width: 100%;
+  margin-top: 50px;
+}
+.latestStoriesHead {
+  opacity: 0.8;
+  padding: 10px 0;
+}
+.latestStoriesHead span {
+  border-bottom: 2px solid crimson;
+  padding: 10px 0;
+}
+.latestStoriesCardContainer {
+  width: 97%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 40px 0;
+  border-top: 3px solid rgb(233, 227, 227);
+  border-bottom: 3px solid rgb(233, 227, 227);
+}
+.storiesCard {
+  padding: 0 25px;
+}
+.storiesCardTitle {
+  letter-spacing: 1.5px;
+  text-align: start;
+}
+.storiesCardPara {
+  padding: 20px 0;
+  font-size: 14px;
+  opacity: 0.6;
+  text-align: justify;
+}
+.storiesContainerCard {
+  border-right: 2px solid lightgray;
+}
+.bottomPara {
+  text-transform: uppercase;
+}
+.viewMore {
+  margin: 30px 40px;
+}
+.viewMoreHead {
+  font-size: 20px;
+  opacity: 0.5;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.rightArrow {
+  padding: 3px 5px;
+  color: red;
+  font-size: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+/* bollyWood styling */
+.latestArticlesBollyWood {
+  margin-top: -70px;
+}
+/* postHeading heading styling */
+.postContainer {
+  box-shadow: 0 5px 10px 1px #00000029;
+}
+.postTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+}
+.postHeading {
+  display: flex;
+  align-items: center;
+}
+.verticleThePost {
+  padding: 5px;
+  transform: rotate(-90deg);
+  font-size: 15px;
+  font-weight: 500;
+}
+.sirenPost {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.getStarted {
+  font-size: 14px;
+  color: #03a87c;
+  padding: 5px 8px;
+  border: 1px solid #03a87c;
+}
+.postSecond {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1.1fr;
+}
+
+.postLeft {
+  padding-top: 10rem;
+  padding-left: 6rem;
+}
+.leftPostFirst {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.leftPostFirst .hand {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+}
+.leftPostFirst .countNumber {
+  color: #939393;
+  font-size: 14px;
+}
+.leftPostSecond {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.shareImage {
+  height: 25px;
+  width: 25px;
+  margin: 0px 20px;
+}
+.share {
+  color: #939393;
+  font-size: 16px;
+}
+.headingPost {
+  margin: 15px 0;
+  margin-top: 45px;
+  font-weight: 400;
+}
+.postProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.postProfileleft {
+  display: flex;
+  align-items: center;
+}
+.profileImage {
+  height: 4rem;
+  width: 4rem;
+}
+.profileDetails {
+  padding: 0 10px;
+}
+.profileName {
+  font-size: 13px;
+  font-weight: 200;
+}
+.profileDateTime {
+  font-size: 10px;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.socialIcon {
+  margin: 2px;
+  color: #ffff;
+  background-color: #262427;
+  padding: 3px;
+  opacity: 0.2;
+}
+.reactScreenShot {
+  width: 100%;
+  height: 35vh;
+  margin: 20px 0;
+}
+.reactScreenParaBig {
+  font-size: 13px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.reactScreenParaSmall {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.codess {
+  width: 100%;
+  height: 70vh;
+  margin-top: 20px;
+}
+.languageName {
+  margin: 20px 0;
+}
+.languageItem {
+  padding: 5px 10px;
+  margin: 2px 5px;
+  background-color: #f2f2f2;
+  color: #a2a2a2;
+  font-size: 14px;
+  font-weight: 200;
+}
+.imgClap {
+  display: flex;
+  align-items: center;
+}
+.imgClapHands {
+  height: 28px;
+  width: 28px;
+}
+.clapCounts {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #939393;
+}
+.imageProfileBottom {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-top: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}
+.bigProfileImg {
+  width: 5rem;
+  height: 5rem;
+  padding: 5px;
+}
+.profileDetailsBottom {
+  margin-left: 15px;
+}
+.profileDetailsBottom .written {
+  font-size: 14px;
+  color: #a2a2a2;
+  padding: 5px;
+}
+.profileDetailsBottom .writerName {
+  font-size: 15px;
+  color: #000000;
+  padding: 5px;
+}
+.profileDetailsBottom .readTime {
+  font-size: 12px;
+  color: #a2a2a2;
+  padding: 5px;
+}
+/* post third */
+.postThird {
+  background-color: #fafafa;
+}
+.postThirdItems {
+  width: 80%;
+  margin: auto;
+  padding-top: 3rem;
+}
+.postThirdHead {
+  font-size: 19px;
+  font-weight: 100;
+  padding: 10px 0;
+}
+.postThirdCard {
+  padding: 30px 0;
+  border-top: 2px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+}
+.postCardTop {
+  font-size: 14px;
+  color: #a2a2a2;
+  padding: 10px 0;
+}
+.postCard {
+  width: 30%;
+}
+.postCardImg {
+  width: 100%;
+  height: 250px;
+}
+.postHeaddingBottom {
+  font-size: 22px;
+  color: #404040;
+  opacity: 0.6;
+  padding: 20px 0;
+}
+.postThirdCardSecond {
+  display: none;
+}
+.headingPara {
+  text-decoration: none;
+  color: #ffff;
+}
+.postPage {
+  position: absolute;
+  top: 0;
+  z-index: 1999;
+  background-color: #ffff;
+  left: 0;
+}
+.responsiveHeading {
+  display: none;
+}
+.menuBarRes {
+  display: none;
+}
+/*  responsive*/
+
+@media (max-width: 1254px) {
+  /* post  */
+  .postLeft {
+    padding-left: 1rem;
+  }
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1116px) {
+  .container {
+    width: 95%;
+  }
+  .articleCardRight .articleRightHeading {
+    font-size: 23px;
+  }
+  .articleCardRight .articlePara {
+    font-size: 12px;
+    width: 100%;
+    padding: 5px;
+  }
+  .smallHeader {
+    font-size: 15px;
+  }
+  .bottomPara {
+    margin-top: 12px;
+    font-size: 10px;
+  }
+  .RightOne {
+    display: none;
+  }
+}
+@media (max-width: 926px) {
+  .postLeft {
+    padding-left: 0rem;
+  }
+  .postHeaddingBottom {
+    font-size: 18px;
+  }
+  .articleCardRight .articleRightHeading {
+    font-size: 19px;
+  }
+  .container {
+    width: 98%;
+  }
+}
+/* Mobile Responsive */
+/* post part styling */
+@media (max-width: 834px) {
+  .menuBarRes {
+    display: block;
+  }
+  .MenuBarHide {
+    display: none;
+  }
+  .responsiveHeading {
+    display: block;
+  }
+  .topHeading {
+    display: none;
+  }
+  .home {
+    display: grid;
+    width: 100%;
+    height: 50vh;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    margin: auto;
+    column-gap: 0;
+  }
+  .titlePara,
+  .grid2,
+  .grid3 {
+    display: none;
+  }
+  .latestGrid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    width: 102%;
+  }
+  .latestGridCard .cardTitle {
+    width: 100%;
+  }
+  .cardHeadInner {
+    display: inline;
+  }
+  .latestGridCard .paraBottom {
+    margin-top: 10px;
+  }
+  .latArticlesGrid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  .vertiCalimg {
+    display: none;
+  }
+  .latArticlesGrid .latArticlesGridRight1 {
+    display: none;
+  }
+  .skyImage {
+    margin-top: 20px;
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+  }
+  .smallConatiner {
+    display: flex;
+    justify-content: flex-start;
+    margin: 8px 0;
+  }
+  .twoNumber {
+    display: none;
+  }
+  .smallImage {
+    width: 150px;
+    height: 18vh;
+    border-radius: 5px;
+  }
+  .latestStories {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .latestStoriesCardContainer {
+    flex-direction: column;
+  }
+  .storiesContainerCard1,
+  .storiesContainerCard2 {
+    border-right: none;
+  }
+  .storiesCard {
+    padding: 10px;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+  .menuBar {
+    flex-direction: column;
+    margin-top: 0px;
+    padding-top: 0;
+    background-color: white;
+    width: 103%;
+    transition: all 0.4s ease;
+  }
+  .menuBar .menuItem {
+    padding: 5px 0;
+  }
+}
+@media (max-width: 756px) {
+  .postSecond {
+    grid-template-columns: 1fr;
+  }
+  .postLeft {
+    display: none;
+  }
+  .postThirdCard {
+    flex-direction: column;
+  }
+  .postCard {
+    width: 80%;
+  }
+}
+@media (max-width: 621px) {
+  .postProfile {
+    flex-direction: column-reverse;
+    justify-content: left;
+    align-items: flex-start;
+  }
+  .postProfileRight {
+    margin: 10px 0;
+  }
+  .socialIcon {
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+    opacity: 0.2;
+  }
+  .reactScreenShot {
+    height: 25vh;
+  }
+  .postThirdCardSecond {
+    display: block;
+  }
+  .postThirdCard {
+    display: none;
+  }
+  .postCardSmall {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .smallBottomPic {
+    width: 100%;
+    height: 100%;
+  }
+  .postCardSmallFirst {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: start;
+    margin: 10px, 5px;
+    color: black;
+  }
+  .postCardSmallSecond {
+    font-size: 14px;
+    color: #939393;
+    margin: 10px 0;
+  }
+  .headingPost {
+    margin: 15px 0;
+  }
+}
+@media (max-width: 609px) {
+  .articleCard {
+    flex-direction: column;
+  }
+  .articleCardRight {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 571px) {
+  .postPage {
+    width: 115%;
+    left: 5px;
+  }
+  /* .home {
+    width: 100%;
+  } */
+}
+@media (max-width: 425px) {
+  .headingPost {
+    font-size: 21px;
+  }
+  .postCardSmallFirst {
+    font-size: 16px;
+  }
+  .postCardSmallSecond {
+    font-size: 12px;
+  }
+}
+@media (max-width: 409px) {
+  .postPage {
+    width: 130%;
+    left: 0;
+  }
+}
+@media (max-width: 350px) {
+  .headingPost {
+    font-size: 17px;
+  }
+  .postPage {
+    width: 132%;
+  }
+}
+@media (max-width: 332px) {
+  .postPage {
+    width: 140%;
+  }
+}
+@media (max-width: 300px) {
+  .postPage {
+    width: 150%;
+  }
+}
